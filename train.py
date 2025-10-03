@@ -47,7 +47,7 @@ if __name__ == "__main__":
     optimizer = optim.Adam(model.parameters(), lr=0.001)
     criterion = nn.CrossEntropyLoss()
 
-    epochs = 5
+    epochs = 3
     for epoch in range(epochs): ## loop over the dataset multiple times
         total_loss = 0
         correct = 0
@@ -77,5 +77,5 @@ if __name__ == "__main__":
     torch.save(model.state_dict(), "model.pth") ## save the model to a file
 
 
-    
+
 
